@@ -84,8 +84,7 @@ class BannerApp:
     def _center(self, _event: tk.Event | None = None) -> None:
         self.root.update_idletasks()
         x = (self.root.winfo_screenwidth() - self.root.winfo_width()) // 2
-        y = (self.root.winfo_screenheight() - self.root.winfo_height()) // 2
-        self.root.geometry(f"+{x}+{y}")
+        self.root.geometry(f"+{x}+0")
 
     def _start_drag(self, event: tk.Event) -> None:
         self.drag_position = (event.x_root - self.root.winfo_x(), event.y_root - self.root.winfo_y())
