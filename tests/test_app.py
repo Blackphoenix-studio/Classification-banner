@@ -93,14 +93,14 @@ class AppTests(unittest.TestCase):
 
         app._render()
         self.assertEqual(app.root.x, (1920 - app.root.width) // 2)
-        self.assertEqual(app.root.y, (1080 - app.root.height) // 2)
+        self.assertEqual(app.root.y, 0)
 
         app.root.x = 30
         app.root.y = 900
         app.current = Level.TOP_SECRET
         app._render()
         self.assertEqual(app.root.x, (1920 - app.root.width) // 2)
-        self.assertEqual(app.root.y, (1080 - app.root.height) // 2)
+        self.assertEqual(app.root.y, 0)
 
     def test_service_policy_allows_escalation_for_regular_user(self):
         class FakeEnforcer:
