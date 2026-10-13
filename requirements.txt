@@ -1,0 +1,2 @@
+# Install the app and its optional Windows service/client dependency.
+.[service]

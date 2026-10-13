@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: lightweight-classification-app
+Version: 0.2.0
+Summary: Lightweight Windows classification banner and enforcement service
+Requires-Python: >=3.10
+Provides-Extra: service
+Requires-Dist: pywin32>=306; sys_platform == "win32" and extra == "service"
